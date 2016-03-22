@@ -48,3 +48,13 @@ THIRD 1|THIRD 2|THIRD 3|THIRD 4
 
 #####Small heading
 
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
+<del>this line is deleted</del>
+
+:sparkles:
+:camel:
+:tada:
+:rocket:
+:monkey:
