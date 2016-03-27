@@ -53,6 +53,19 @@ THIRD 1|THIRD 2|THIRD 3|THIRD 4
 
 <del>this line is deleted</del>
 
+[Google][1]
+
+[Youtube][2]
+
+[Yahoo][3]
+
+[GitHub][4]
+
+[1]: http//:www.google.com/
+[2]: http//:www.youtube.com/
+[3]: http//:www.yahoo.com/
+[4]: http//:www.github.com/
+
 :sparkles:
 :camel:
 :tada:
