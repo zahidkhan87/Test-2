@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {		
+	margin: auto;	
+  padding: 10px;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+.uppers {
+  margin: 5px;	
+	width: auto;
+  padding: 10px;
+  background-color: honeydew;
+	height: 200px;
+	border: #ccc thin solid;
+}
+.diamond {
+  margin: 5px;	
+	width: auto;
+  padding: 10px;
+  background-color: honeydew;
+	height: 550px;
+	border: #ccc thin solid;
+}
+  </style>
+  <meta charset="UTF-8">
+  <title>My Assignments</title>
+</head>
+<body>
+  <div class="uppers">
+  <h1> Fibonacci Series</h1>
+  <p>Click below button and put number to get fibonacci series.</p>
+  <button onclick="fibo()">Click here</button>
+  <script>
+    function fibo() {
+      var number = Number(prompt("Enter Fibonacci series limit"));
+var firstDigit = 0;
+var secondDigit = 1;
+var nextDigit;
+for(var i = 0; i < number; i++) {
+    if(i == 0) {
+        document.write(firstDigit + "<br>");
+        continue;
+    }
+    if (i == 1) {
+        document.write(secondDigit + "<br>");
+        continue;
+    }
+    nextDigit = firstDigit + secondDigit;
+    firstDigit = secondDigit;
+    secondDigit = nextDigit;
+    document.write(nextDigit + "<br>");
+}
+
+    }
+  </script>
+  </div>
+  <div class="uppers">
+  <h1> Tables</h1>
+  <p>Click below button and put number to get table.</p>
+  <button onclick="table()">Click here</button>
+  <script>
+    function table() {
+    var a = prompt('Enter Any Number');
+    for (var i = 1; i <= 20; i++) {
+        document.write(a + " x " + i + ' = ' + (a * i) + '<br>');
+    }
+}
+  </script>
+  </div>
+  <div class="diamond">
+  <h1>Diamond Pattern</h1>
+  <script>
+    function pattern( num ) 
+{
+    num = parseInt(num,5);
+
+    var i, space;
+
+    document.write("")
+    document.write(" <pre>");
+    for(i = 1; i <= num; i++ ) {
+      for ( space = 1; space <= num-i; space++ ) {
+            document.write(" ");
+        }
+        for ( space = 1; space <= i; space++ ) {
+            document.write(" *");
+        }
+        document.write("\n");
+    }
+    for(i = num-1; i >= 1; i-- ) {
+      for ( space = 1; space <= num-i; space++ ) {
+            document.write(" ");
+        }
+        
+        for ( space = 1; space <= i; space++ ) {
+            document.write(" *");
+        }
+        document.write("\n");
+    }
+}
+
+pattern(30);
+  </script>
+  </div>
+</body>
+</html>
